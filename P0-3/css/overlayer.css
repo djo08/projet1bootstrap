@@ -1,0 +1,38 @@
+#overlayer {
+position:fixed;
+width: 100%;
+height: 100%;
+top: 0;
+z-index:2;
+background-color: rgba(0,0,0,0.5);
+display: none;
+}
+
+#text-overlayer {
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  z-index: 3;
+  margin: 0 auto;
+  display: none;
+  top: 20%;
+  position: relative;
+  padding: 30px 10px 10px 10px;
+}
+
+#text-overlayer span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: red;
+  font-weight: bold;
+  display: block;
+  padding-right:10px;
+  font-size: 20px;
+}
+
+#text-overlayer span:hover {
+  cursor: pointer;
+}

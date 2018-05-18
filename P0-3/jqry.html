@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/boot strap.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/style.css">
+    <title>Projet 3</title>
+
+</head>
+
+<script>
+function myfunction(){
+    var txt1 = "<p>Text.</p>";              // Create text with HTML
+    var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+    var txt3 = document.createElement("p");
+    txt3.innerHTML = "Text.";               // Create text with DOM
+    $("#MC").append(txt1, txt2, txt3);     // Append new elements
+  }
+
+</script>
+
+
+
+
+<body>
+
+  <div id="Mybox">
+   <p>Haec igitur Epicuri non probo,
+    inquam. De cetero vellem equidem aut ipse doctrinis
+      fuisset instructior est enim, quod tibi ita videri necesse est,
+    </p>
+    <p id="MC">
+        Mon repo est composé d'au moins deux branch.
+        develop : dédié au développement et résolution de bug. master : reflète le code en production. Personne ne doit travailler directement sur cette branch.
+        Pour récupérer votre branch develop
+    </p>
+
+  </div>
+<button onclick="myfunction()">Append text</button>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</body>
+</html>
